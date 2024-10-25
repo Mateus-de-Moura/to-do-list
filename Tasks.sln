@@ -13,11 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{68E94C
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "TaskWebApp", "TaskWebApp\TaskWebApp.esproj", "{F4D069EB-FB7F-45F8-A9D6-DA2BDAB2ECBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tasksWebApi.Application", "src\Server\tasksWebApi.Application\tasksWebApi.Application.csproj", "{3A699C23-88B6-4714-A568-84F1EB8F1E20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tasksWebApi.Application", "src\Server\tasksWebApi.Application\tasksWebApi.Application.csproj", "{3A699C23-88B6-4714-A568-84F1EB8F1E20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tasksWebApi.Domain", "src\Server\tasksWebApi.Domain\tasksWebApi.Domain.csproj", "{AECEC903-DC66-4C92-BB43-5B447625A57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tasksWebApi.Domain", "src\Server\tasksWebApi.Domain\tasksWebApi.Domain.csproj", "{AECEC903-DC66-4C92-BB43-5B447625A57A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tasksWebApi.Infra.Data", "src\Server\tasksWebApi.Infra.Data\tasksWebApi.Infra.Data.csproj", "{BB452266-D90A-4736-89F5-C388407DA7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tasksWebApi.Infra.Data", "src\Server\tasksWebApi.Infra.Data\tasksWebApi.Infra.Data.csproj", "{BB452266-D90A-4736-89F5-C388407DA7C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{65E666F3-B244-48C5-A462-2BF9379D8591}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,14 +4,88 @@
     "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj": {
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
-        "projectName": "tasksWebApi",
-        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj",
+        "projectName": "tasksWebApi.Application",
+        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\obj\\",
+        "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj"
+              },
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Result": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj",
+        "projectName": "tasksWebApi.Domain",
+        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,7 +119,153 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj",
+        "projectName": "tasksWebApi.Infra.Data",
+        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
+        "projectName": "tasksWebApi",
+        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
+        "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj"
+              },
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj"
+              },
+              "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Result": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.7, )"

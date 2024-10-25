@@ -1,12 +1,104 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65E666F3-B244-48C5-A462-2BF9379D8591}|Itens de Solu\u00E7\u00E3o{65E666F3-B244-48C5-A462-2BF9379D8591}|C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{65E666F3-B244-48C5-A462-2BF9379D8591}|Itens de Solu\u00E7\u00E3o{65E666F3-B244-48C5-A462-2BF9379D8591}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65E666F3-B244-48C5-A462-2BF9379D8591}|Itens de Solu\u00E7\u00E3o{65E666F3-B244-48C5-A462-2BF9379D8591}|C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}",
+      "RelativeMoniker": "D:0:0:{65E666F3-B244-48C5-A462-2BF9379D8591}|Itens de Solu\u00E7\u00E3o{65E666F3-B244-48C5-A462-2BF9379D8591}|solutionrelative:.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi\\contollers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|solutionrelative:src\\server\\taskswebapi\\contollers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|solutionrelative:src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|solutionrelative:src\\server\\taskswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAABYAAAAMAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-10-25T23:56:48.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".editorconfig",
+              "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.editorconfig",
+              "RelativeDocumentMoniker": ".editorconfig",
+              "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\.editorconfig",
+              "RelativeToolTip": ".editorconfig",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-25T23:56:37.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TasksService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
+              "RelativeDocumentMoniker": "src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
+              "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
+              "RelativeToolTip": "src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T23:51:10.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
+              "RelativeDocumentMoniker": "src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
+              "RelativeToolTip": "src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T23:50:33.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Server\\tasksWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Program.cs",
+              "RelativeToolTip": "src\\Server\\tasksWebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T23:50:07.69Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
