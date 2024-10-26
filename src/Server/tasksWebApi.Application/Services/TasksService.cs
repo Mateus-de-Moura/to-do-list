@@ -1,20 +1,31 @@
 ﻿using Ardalis.Result;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using tasksWebApi.Infra.Data.Contexts;
 
 namespace tasksWebApi.Application.Services
 {
-    public class TasksService
+    public class TasksService(AppDatabaseContext context)
     {
-
-        public async Task<Result<List<tasksWebApi.Domain.Entities.Task>>> getAll()
+        public async Task<Result<List<tasksWebApi.Domain.Entities.Task>>> GetAll()
         {
-            List<tasksWebApi.Domain.Entities.Task> tasks = new();
+            try
+            {
+                var tasks = await context.Tasks.ToListAsync();
 
-            return Result.Success(tasks);
+                return Result.Success(tasks);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+         
         }
     }
 }

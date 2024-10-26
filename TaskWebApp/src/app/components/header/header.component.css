@@ -1,0 +1,39 @@
+:root {
+    --color-white: #fff;
+    --color-blue-100: #E4E9FF;
+    --color-blue-800: #0000BF;
+    --color-blue-900: #000097;
+    --color-green-100: #C1DF31;
+    --color-green-600: #82C348;
+    --sidebar-width: 300px;
+}
+
+.card{
+    margin: 2rem;
+    height: 400px;
+    box-sizing: 30px solid blue;
+}
+.card-header {
+    background-color: var(--color-blue-100);
+    border: 2px solid var(--color-blue-800);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 66px;
+    min-height: 66px;
+    color: var(--color-blue-800);
+}
+
+.card-footer {
+    background-color: #FFF;
+    border-top: none;
+    border: 2px solid var(--color-blue-800);
+}
+
+.card-body {
+    border: 2px solid var(--color-blue-800);
+    border-top: none;
+    padding: 36px 46px 46px 46px;
+    border-radius: 0 0 6px 6px;
+}

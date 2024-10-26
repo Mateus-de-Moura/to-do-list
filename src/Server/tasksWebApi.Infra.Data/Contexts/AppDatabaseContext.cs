@@ -14,7 +14,7 @@ namespace tasksWebApi.Infra.Data.Contexts
                 
         }
 
-        DbSet<tasksWebApi.Domain.Entities.Task> Taks { get; set; }
+        public DbSet<tasksWebApi.Domain.Entities.Task> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

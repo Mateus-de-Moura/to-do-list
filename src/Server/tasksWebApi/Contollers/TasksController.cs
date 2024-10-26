@@ -11,7 +11,7 @@ namespace tasksWebApi.Contollers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var result = await tasksService.getAll();
+            var result = await tasksService.GetAll();
 
             return result.IsSuccess ? Ok(result.Value) : BadRequest();    
         }
