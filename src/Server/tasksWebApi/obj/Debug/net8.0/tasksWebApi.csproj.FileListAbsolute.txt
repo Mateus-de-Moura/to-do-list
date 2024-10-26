@@ -84,3 +84,6 @@ C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll

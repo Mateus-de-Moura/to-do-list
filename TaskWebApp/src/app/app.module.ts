@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskService } from './services/tasks.service';
+import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TaskService } from './services/tasks.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]

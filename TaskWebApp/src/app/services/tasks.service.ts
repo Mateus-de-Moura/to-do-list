@@ -15,7 +15,7 @@ export class TaskService {
     }
 
     getAllTasks() {
-       return this.httpClient.get<Task[]>(this.api)
+       return this.httpClient.get(this.api)
     }
 
     deleteTask() {

@@ -56,6 +56,10 @@
             "Ardalis.Result": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             }
           },
           "imports": [

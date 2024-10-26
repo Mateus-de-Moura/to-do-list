@@ -37,3 +37,12 @@
     padding: 36px 46px 46px 46px;
     border-radius: 0 0 6px 6px;
 }
+
+.td{
+    border: 1px solid #ccc;
+}
+
+.thead{
+    background-color: blue;
+    color: white;
+}

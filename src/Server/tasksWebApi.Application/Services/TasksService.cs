@@ -6,6 +6,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using tasksWebApi.Application.Common.Extensions;
+using tasksWebApi.Application.Common.Models;
+using tasksWebApi.Application.Dtos;
+using tasksWebApi.Domain.Entities;
 using tasksWebApi.Infra.Data.Contexts;
 
 namespace tasksWebApi.Application.Services
@@ -25,7 +29,24 @@ namespace tasksWebApi.Application.Services
 
                 throw;
             }
-         
+
+        }
+
+        public async Task<Result<PaginatedList<tasksWebApi.Domain.Entities.Task>>> GetPagedAppUserAsync(GetPagedTaskRequestDto request)
+        {
+            try
+            {
+                var paged = await context.Tasks
+                    .Where(t => string.IsNullOrEmpty(request.search) || t.Description.Contains(request.search))
+                    .PaginatedListAsync(request.PageNumber, request.PageSize);
+
+
+                return Result.Success(paged);
+            }
+            catch (Exception e)
+            {
+                return Result.Error(e.Message); ;
+            }
         }
     }
 }
