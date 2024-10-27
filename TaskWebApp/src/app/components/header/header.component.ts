@@ -29,12 +29,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.initDataTable();
 
-    document.querySelectorAll('.edit-link').forEach(link => {
-      link.addEventListener('click', (event) => {
+    document.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement;
+      if (target.classList.contains('edit-link')) {
         event.preventDefault();
-        const id = link.getAttribute('data-id');
-        this.router.navigate(['/create', { id }]);
-      });
+        const id = target.getAttribute('data-id');
+        this.router.navigate(['/Update', { id }]);
+        console.log('chegou aqui');
+      }
     });
 
   }
@@ -95,7 +97,7 @@ export class HeaderComponent implements OnInit {
         { title: 'Data de Criação', data: 'createdAt' },
         {
           title: 'Ações', data: null, render: (data, type, row) => {
-            return `<a routerLink="/create"><i class="fa-solid fa-pen-to-square"></i></a>`
+            return `<a class="edit-link" data-id="${row.id}" href="#"><i class="fa-solid fa-pen-to-square"></i></a>`;
           }
         },
       ]

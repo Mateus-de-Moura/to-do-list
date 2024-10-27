@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { TaskService } from './services/tasks.service';
 import { DataTablesModule } from "angular-datatables";
 import { CreateTaskComponent } from './components/create-task/create-task.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { UpdateTaskComponent } from './components/update-task/update-task.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CreateTaskComponent
+    CreateTaskComponent,
+    UpdateTaskComponent
   ],
   imports: [
     BrowserModule,
