@@ -48,5 +48,21 @@ namespace tasksWebApi.Application.Services
                 return Result.Error(e.Message); ;
             }
         }
+
+        public async Task<Result<bool>> CreateAsync(CreateTaskDto task)
+        {
+
+            await context.Tasks.AddAsync(new Domain.Entities.Task
+            {
+                Completed = task.Completed,
+                Description = task.Description,
+                CreatedAt = task.CreatedAt,
+            });
+
+            int rowsAffected = await context.SaveChangesAsync();
+
+            return rowsAffected > 0 ? Result.Success(true) : Result.Error();
+
+        }
     }
 }

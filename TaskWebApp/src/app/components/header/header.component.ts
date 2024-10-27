@@ -1,9 +1,12 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { TaskService } from '../../services/tasks.service';
 import { Config } from 'datatables.net';
 import { Subject } from 'rxjs';
 import { DataTablesResponse } from '../../models/datatables-response.model';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { DataTableDirective } from 'angular-datatables';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -11,19 +14,33 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent implements OnInit, OnDestroy {
+export class HeaderComponent implements OnInit {
 
   tasks!: any;
   dtoptions: Config = {};
   dttrigger: Subject<any> = new Subject<any>();
   searchQuery: string = '';
-  dtInstance: any; 
+  dtInstance: any;
+  @ViewChild(DataTableDirective, { static: false })
+  dtElement!: DataTableDirective;
 
-  constructor(private taskService: TaskService, private HttpClient: HttpClient) { }
+  constructor(private HttpClient: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-    this.LoadDatabase();
     this.initDataTable();
+
+    document.querySelectorAll('.edit-link').forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const id = link.getAttribute('data-id');
+        this.router.navigate(['/create', { id }]);
+      });
+    });
+
+  }
+
+  navigateToCreate(){
+    this.router.navigate(['/create']);
   }
 
   initDataTable() {
@@ -35,14 +52,36 @@ export class HeaderComponent implements OnInit, OnDestroy {
       lengthChange: false,
       pagingType: 'full_numbers',
       ordering: false,
+      language: {
+        processing: `<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>`,
+        emptyTable: "Sem dados disponíveis",
+        lengthMenu: "Mostrar _MENU_ registros",
+        zeroRecords: "Não foram encontrados resultados",
+        info: "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+        infoEmpty: "Mostrando de 0 até 0 de 0 registros",
+        infoFiltered: "",
+        infoPostFix: "",
+        search: "Procurar:",
+        url: "",
+        paginate: {
+          next: '<i class="fa fa-chevron-right"></i>',
+          previous: '<i class="fa fa-chevron-left"></i>',
+          first: '<i class="fa fa-angle-double-left"></i>',
+          last: '<i class="fa fa-angle-double-right"></i>'
+        }
+      },
 
       ajax: (dataTablesParameters: any, callback: any) => {
+        let pageNumber = Math.floor(dataTablesParameters.start / dataTablesParameters.length) + 1;
+
         let params = new HttpParams()
-          .set('pageNumber', dataTablesParameters.pageNumber)
+          .set('pageNumber', pageNumber)
+          .set('pageSize', dataTablesParameters.length.toString())
           .set('query', this.searchQuery);
 
         this.HttpClient.post<DataTablesResponse>('https://localhost:7009/api/Tasks', params)
           .subscribe(resp => {
+            this.dttrigger.next(null);
             callback({
               recordsTotal: resp.recordsTotal,
               recordsFiltered: resp.recordsFiltered,
@@ -54,33 +93,24 @@ export class HeaderComponent implements OnInit, OnDestroy {
         { title: 'Completa', data: 'completed' },
         { title: 'Descrição', data: 'description' },
         { title: 'Data de Criação', data: 'createdAt' },
-        { title: 'Ações', data: null },
+        {
+          title: 'Ações', data: null, render: (data, type, row) => {
+            return `<a routerLink="/create"><i class="fa-solid fa-pen-to-square"></i></a>`
+          }
+        },
       ]
     };
-
-    // Recarregar a DataTable
     this.dttrigger.next(null);
-  }
-
-  LoadDatabase() {
-    this.taskService.getAllTasks().subscribe(item => {
-      this.tasks = item;
-      this.dttrigger.next(null);
-    });
   }
 
   onSearch() {
     const inputElement = document.getElementById('input-search') as HTMLInputElement;
     this.searchQuery = inputElement.value;
 
-    this.ngOnDestroy()
-    this.initDataTable(); 
-  }
-
-  ngOnDestroy(): void {
-    
-    if (this.dtInstance) {
-      this.dtInstance.destroy();
+    if (this.dtElement) {
+      this.dtElement.dtInstance.then((dtInstance: any) => {
+        dtInstance.ajax.reload();
+      });
     }
   }
 }

@@ -10,11 +10,11 @@
 
 .card{
     margin: 2rem;
-    height: 400px;
+    height: 630px;
     box-sizing: 30px solid blue;
 }
 .card-header {
-    background-color: var(--color-blue-100);
+    background-color: var(--color-blue-800);
     border: 2px solid var(--color-blue-800);
     border-bottom: none;
     display: flex;
@@ -38,11 +38,141 @@
     border-radius: 0 0 6px 6px;
 }
 
-.td{
+td{
     border: 1px solid #ccc;
 }
 
-.thead{
+thead{
     background-color: blue;
     color: white;
 }
+
+table{
+    margin-top: -3rem !important;
+}
+
+﻿th, td {
+    white-space: nowrap;
+}
+
+tr {
+    vertical-align: middle;
+    border-color: #f1f5ff;
+}
+
+td {
+    margin: 10px;
+    max-width: 200px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+thead tr th {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-blue-800);
+}
+
+table td {
+    font-size: 16px;
+}
+
+.table {
+    width: 100% !important;
+    color: #24364C;
+    border-collapse: collapse;
+}
+
+    .table.dataTable tbody tr {
+        vertical-align: middle;
+    }
+
+    .table thead, .table th {
+        border-bottom: 1px solid #eef3ff !important;
+        color: var(--color-blue-800);
+    }
+
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+
+.table i {
+    font-size: 24px !important;
+}
+
+.dataTables_processing {
+    padding: 50px;
+    display: block;
+    margin: 0 auto;
+    position: absolute !important;
+    border: 2px solid red;
+}
+
+.dt-paging-button {
+    background-color: blue !important;
+    border: none;
+    color: blue !important;
+    outline: none;
+    font-size: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif !important;
+}
+
+    .dt-paging-button.current {
+        font-weight: 600;
+    }
+
+.dt-paging {
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#table_wrapper > div:nth-child(4) > div {
+    display: block;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.dt-info {
+    font-size: 16px;
+    color: var(--color-blue-800);
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+.dt-processing {
+    position: absolute;
+    border-radius: 0;
+    opacity: 0.7;
+    padding-top: 10px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    z-index: 9999;
+}
+
+    .dt-processing i {
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        color: var(--color-blue-800);
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+

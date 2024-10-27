@@ -7,17 +7,21 @@ import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskService } from './services/tasks.service';
 import { DataTablesModule } from "angular-datatables";
+import { CreateTaskComponent } from './components/create-task/create-task.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateTaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DataTablesModule
+    DataTablesModule,
+    FormsModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]

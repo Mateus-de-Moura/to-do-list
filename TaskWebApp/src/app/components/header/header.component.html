@@ -1,10 +1,10 @@
-<div class="row mb-3 px-5 mt-5">
+<div class="row mb-1 px-5 mt-5">
     <div class="col-12">
         <div class="d-flex align-items-center justify-content-between">
             <h5 class="text-primary">Tasks</h5>
-            <a class="btn btn-primary" title="Novo usuário">
+            <button class="btn btn-primary" title="Novo usuário" (click)="navigateToCreate()">
                 Cadastrar Nova Task
-            </a>
+            </button>
         </div>
     </div>
 </div>
@@ -21,8 +21,8 @@
         </div>
     </div>
 
-    <div class="card-body table-responsive">
-        <table datatable [dtOptions]="dtoptions" [dtTrigger]="dttrigger" class="table text-center">
+    <div class="card-body">
+        <table datatable [dtOptions]="dtoptions"  class="table text-center">
             <thead>
                 <tr>
                     <th class="text-center">Completa</th>
@@ -31,16 +31,7 @@
                     <th class="text-center">Opções</th>
                 </tr>
             </thead>
-            <tbody>
-                @for(item of tasks; track item){
-                    <tr>
-                       <td class="text-center"> {{item.completed}}</td> 
-                       <td class="text-center"> {{item.description}}</td> 
-                       <td class="text-center"> {{item.createdAt}}</td> 
-                       <td class="text-center"> </td> 
-                    </tr>
-                    
-                }
+            <tbody>                                                              
             </tbody>
         </table>
     </div>
