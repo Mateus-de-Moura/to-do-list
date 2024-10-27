@@ -1,0 +1,37 @@
+.card{
+    margin: 2rem;
+    height: 350px;
+    box-sizing: 30px solid blue;
+}
+.card-header {
+    background-color: var(--color-blue-800);
+    border: 2px solid var(--color-blue-800);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 66px;
+    min-height: 66px;
+    color: var(--color-blue-800);
+}
+
+.card-footer {
+    background-color: #FFF;
+    border-top: none;
+    border: 2px solid var(--color-blue-800);
+}
+
+.card-body {
+    border: 2px solid var(--color-blue-800);
+    border-top: none;
+    padding: 10px 10px 10px 46px;
+    border-radius: 0 0 6px 6px;
+}
+
+.row-button{
+    margin-top: -3rem !important ;
+}
+
+label{
+    font-weight: bold;
+}

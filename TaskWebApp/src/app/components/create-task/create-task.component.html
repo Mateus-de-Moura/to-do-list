@@ -19,7 +19,7 @@
                 <div class="col-lg-4 mb-3">
                     <div class="form-group form-check">
                         <label class="form-check-label" for="active">Completa</label>
-                        <input type="checkbox" class="form-check-input" id="active" [(ngModel)]="task.completed" name="active">
+                        <input type="checkbox" class="form-check-input" id="active" [(ngModel)]="task.completed" name="active">                   
                     </div>
                 </div>
             </div>
@@ -28,6 +28,7 @@
                     <div>
                         <label for="description">Descrição</label>
                         <textarea class="form-control" id="description" rows="3" [(ngModel)]="task.description" name="description"></textarea>
+                        <span class="text-danger error-description"></span>
                     </div>
                 </div>
             </div>

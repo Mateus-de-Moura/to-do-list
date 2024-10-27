@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|solutionrelative:src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi\\contollers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E63A375-232B-4AF3-A503-6D2E690948BF}|src\\Server\\TasksWebApi\\tasksWebApi.csproj|solutionrelative:src\\server\\taskswebapi\\contollers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|c:\\users\\mateus\\onedrive\\\u00E1rea de trabalho\\to-do-list\\src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A699C23-88B6-4714-A568-84F1EB8F1E20}|src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj|solutionrelative:src\\server\\taskswebapi.application\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TasksService.cs",
               "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
               "RelativeDocumentMoniker": "src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
               "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
               "RelativeToolTip": "src\\Server\\tasksWebApi.Application\\Services\\TasksService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDAAAAANAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwEIAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T02:39:38.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TasksController.cs",
               "DocumentMoniker": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
               "RelativeDocumentMoniker": "src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
               "ToolTip": "C:\\Users\\Mateus\\OneDrive\\\u00C1rea de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
               "RelativeToolTip": "src\\Server\\tasksWebApi\\Contollers\\TasksController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAgwBsAAABKAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDcAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T02:06:16.535Z"
+              "WhenOpened": "2024-10-26T02:06:16.535Z",
+              "EditorCaption": ""
             }
           ]
         }

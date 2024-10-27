@@ -28,21 +28,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.initDataTable();
-
-    document.addEventListener('click', (event) => {
-      const target = event.target as HTMLElement;
-      if (target.classList.contains('edit-link')) {
-        event.preventDefault();
-        const id = target.getAttribute('data-id');
-        this.router.navigate(['/Update', { id }]);
-        console.log('chegou aqui');
-      }
-    });
+    ;
 
   }
 
-  navigateToCreate(){
+  navigateToCreate() {
     this.router.navigate(['/create']);
+  }
+
+  navigateToEdit(id: string) {    
+    this.router.navigate(['/edit', id]);
   }
 
   initDataTable() {
@@ -89,7 +84,14 @@ export class HeaderComponent implements OnInit {
               recordsFiltered: resp.recordsFiltered,
               data: resp.data
             });
+            $('.edit-link').off('click').on('click', (event) => {
+              event.preventDefault();
+              const id = $(event.currentTarget).data('id');
+              console.log('clicou')
+              this.navigateToEdit(id);
+            });
           });
+
       },
       columns: [
         { title: 'Completa', data: 'completed' },
@@ -97,7 +99,8 @@ export class HeaderComponent implements OnInit {
         { title: 'Data de Criação', data: 'createdAt' },
         {
           title: 'Ações', data: null, render: (data, type, row) => {
-            return `<a class="edit-link" data-id="${row.id}" href="#"><i class="fa-solid fa-pen-to-square"></i></a>`;
+            return `<a class="edit-link" href="#" data-id="${row.id}">
+               <i class="fa-solid fa-pen-to-square"></i></a>`;
           }
         },
       ]

@@ -46,7 +46,14 @@ namespace tasksWebApi.Contollers
             var result = await tasksService.CreateAsync(task);
 
             return result.IsSuccess ? Ok() : BadRequest();
+        }
 
+        [HttpGet("Edit")]
+        public async Task<IActionResult> Edit(Guid Id)
+        {
+            var result = await tasksService.GetAsync(Id);
+
+            return result.IsSuccess ? Ok(result.Value) : BadRequest();
         }
 
 

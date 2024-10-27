@@ -22,20 +22,27 @@ export class CreateTaskComponent {
   }
 
   async saveTask() {
-     await this.taskService.createTask(this.task.completed, this.task.description)
 
-    Swal.fire({
-      icon: 'success',
-      title: 'Sucesso!',
-      text: `Cadastrado com Sucesso!`,
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 2000,
-      timerProgressBar: true
-    }).then(() => {
-      this.router.navigate(['']);
-    });
+    if (this.task.description === "" || this.task.description === undefined) {
+      $('.error-description').text('campo obrigatório')
+    }else{
+      await this.taskService.createTask(this.task.completed, this.task.description)
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Sucesso!',
+        text: `Cadastrado com Sucesso!`,
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true
+      }).then(() => {
+        this.router.navigate(['']);
+      });
+    }
+
+  
 
   }
 

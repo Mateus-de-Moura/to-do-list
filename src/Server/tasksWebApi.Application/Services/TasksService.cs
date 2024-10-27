@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,6 @@ namespace tasksWebApi.Application.Services
 
                 throw;
             }
-
         }
 
         public async Task<Result<PaginatedList<tasksWebApi.Domain.Entities.Task>>> GetPagedAppUserAsync(GetPagedTaskRequestDto request)
@@ -45,13 +45,12 @@ namespace tasksWebApi.Application.Services
             }
             catch (Exception e)
             {
-                return Result.Error(e.Message); ;
+                return Result.Error(e.Message); 
             }
         }
 
         public async Task<Result<bool>> CreateAsync(CreateTaskDto task)
-        {
-
+        {            
             await context.Tasks.AddAsync(new Domain.Entities.Task
             {
                 Completed = task.Completed,
@@ -62,6 +61,23 @@ namespace tasksWebApi.Application.Services
             int rowsAffected = await context.SaveChangesAsync();
 
             return rowsAffected > 0 ? Result.Success(true) : Result.Error();
+
+        }
+
+        public async Task<Result<Domain.Entities.Task>> GetAsync(Guid Id)
+        {
+            try
+            {
+                var entity = await context.Tasks.FirstOrDefaultAsync(t => t.Id == Id);
+
+                return entity is not null ? Result.Success(entity) : Result.Error();
+            }
+            catch (Exception e)
+            {
+
+                return Result.Error(e.Message);
+            }
+         
 
         }
     }

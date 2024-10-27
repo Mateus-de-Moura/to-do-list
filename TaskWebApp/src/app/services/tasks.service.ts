@@ -22,6 +22,10 @@ export class TaskService {
 
     }
 
+    async edit(id: string): Promise<any> {
+        return this.httpClient.get<any>(`${this.api}/Edit?Id=${id}`).toPromise();
+      }
+
     updateTask() {
 
     }
