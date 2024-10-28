@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7D457B33-65D9-4648-ACE5-D318125C0C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Tests", "src\tests\Tasks.Tests\Tasks.Tests.csproj", "{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{BB452266-D90A-4736-89F5-C388407DA7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB452266-D90A-4736-89F5-C388407DA7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB452266-D90A-4736-89F5-C388407DA7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +73,8 @@ Global
 		{3A699C23-88B6-4714-A568-84F1EB8F1E20} = {15BD70E2-0756-42A3-A936-FF593AEA9184}
 		{AECEC903-DC66-4C92-BB43-5B447625A57A} = {15BD70E2-0756-42A3-A936-FF593AEA9184}
 		{BB452266-D90A-4736-89F5-C388407DA7C7} = {15BD70E2-0756-42A3-A936-FF593AEA9184}
+		{7D457B33-65D9-4648-ACE5-D318125C0C0E} = {5AB6E52D-02F7-44B8-B9E8-AB09D7617062}
+		{49AF73BE-C27F-49C7-A6A1-19D7E8050BF8} = {7D457B33-65D9-4648-ACE5-D318125C0C0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D864B709-4E77-4D5B-A211-F2119FB662C1}
