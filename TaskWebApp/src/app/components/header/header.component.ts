@@ -47,25 +47,37 @@ export class HeaderComponent implements OnInit {
   }
 
   async deleteTask(id: string) {
-    await this.taskService.deleteTask(id);
-
-    Swal.fire({
-      icon: 'success',
-      title: 'Sucesso!',
-      text: `Cadastrado com Sucesso!`,
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 2000,
-      timerProgressBar: true
-    }).then(() => {
-      if (this.dtElement) {
-        this.dtElement.dtInstance.then((dtInstance: any) => {
-          dtInstance.ajax.reload();
-        });
-      }
+    const result = await Swal.fire({
+      title: 'Você tem certeza que deseja excluir?',
+      text: "Essa ação não pode ser revertida!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim, excluir!',
+      cancelButtonText: 'Cancelar'
     });
 
+    if (result.isConfirmed) {
+      await this.taskService.deleteTask(id);
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Sucesso!',
+        text: `Cadastrado com Sucesso!`,
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1000,
+        timerProgressBar: true
+      }).then(() => {
+        if (this.dtElement) {
+          this.dtElement.dtInstance.then((dtInstance: any) => {
+            dtInstance.ajax.reload();
+          });
+        }
+      });
+    }
   }
 
   initDataTable() {
@@ -139,7 +151,20 @@ export class HeaderComponent implements OnInit {
           }
         },
         { title: 'Descrição', data: 'description' },
-        { title: 'Data de Criação', data: 'createdAt' },
+        {
+          title: 'Data de Criação',
+          data: 'createdAt',
+          render: function (data, type, row) {
+            if (data) {
+              const date = new Date(data);
+              const day = String(date.getDate()).padStart(2, '0');
+              const month = String(date.getMonth() + 1).padStart(2, '0');
+              const year = date.getFullYear();
+              return `${day}/${month}/${year}`;
+            }
+            return '';
+          }
+        },
         {
           title: 'Ações', data: null, render: (data, type, row) => {
             return `
