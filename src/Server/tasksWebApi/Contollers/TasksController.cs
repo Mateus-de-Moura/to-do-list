@@ -1,4 +1,4 @@
-﻿using Azure;
+using Azure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using tasksWebApi.Application.Common.Libraries.DataTables;
@@ -18,10 +18,10 @@ namespace tasksWebApi.Contollers
         {
             var result = await tasksService.GetAll();
 
-            return result.IsSuccess ? Ok(result.Value) : BadRequest();
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(result.Errors);
         }
 
-        [HttpPost]
+        [HttpPost("GetDataTables")]
         public async Task<IActionResult> GetDataTables(DataTablesParameterModel model)
         {
             var query = Request.Form["query"].FirstOrDefault();
@@ -45,7 +45,7 @@ namespace tasksWebApi.Contollers
         {
             var result = await tasksService.CreateAsync(task);
 
-            return result.IsSuccess ? Ok() : BadRequest();
+            return result.IsSuccess ? Ok() : BadRequest(result.Errors);
         }
 
         [HttpGet("Edit")]
@@ -53,9 +53,23 @@ namespace tasksWebApi.Contollers
         {
             var result = await tasksService.GetAsync(Id);
 
-            return result.IsSuccess ? Ok(result.Value) : BadRequest();
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(result.Errors);
         }
 
+        [HttpPut("Update")]
+        public async Task<IActionResult> Update(UpdateTaskDto task)
+        {
+            var result = await tasksService.UpdateAsync(task);
 
+            return result.IsSuccess ? Ok(result.Value) : NotFound(result.Errors);
+        }
+
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete(Guid Id)
+        {
+            var result = await tasksService.DeleteTaskAsync(Id);
+
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(result.Errors);
+        }
     }
 }

@@ -176,3 +176,7 @@ table.dataTable.no-footer {
     }
 }
 
+.icons-table a i {
+    color: black !important;
+}
+

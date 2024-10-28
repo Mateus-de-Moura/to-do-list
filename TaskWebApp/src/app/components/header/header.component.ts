@@ -28,7 +28,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.initDataTable();
-    ;
+    
+    if (this.dtElement) {
+        this.dtElement.dtInstance.then((dtInstance: any) => {
+          dtInstance.ajax.reload();
+        });
+      }
 
   }
 
@@ -86,10 +91,15 @@ export class HeaderComponent implements OnInit {
             });
             $('.edit-link').off('click').on('click', (event) => {
               event.preventDefault();
-              const id = $(event.currentTarget).data('id');
-              console.log('clicou')
+              const id = $(event.currentTarget).data('id');     
               this.navigateToEdit(id);
             });
+
+            $('.delete-link').off('click').on('click', (event) => {
+                event.preventDefault();
+                const id = $(event.currentTarget).data('id');          
+                this.navigateToEdit(id);
+              });
           });
 
       },
@@ -99,8 +109,16 @@ export class HeaderComponent implements OnInit {
         { title: 'Data de Criação', data: 'createdAt' },
         {
           title: 'Ações', data: null, render: (data, type, row) => {
-            return `<a class="edit-link" href="#" data-id="${row.id}">
-               <i class="fa-solid fa-pen-to-square"></i></a>`;
+            return `
+            <div class="d-flex align-items-center justify-content-center icons-table">
+                <a class="edit-link mx-2" href="#" data-id="${row.id}">
+                    <i class="fa-solid fa-pen-to-square" style="color: black;"></i>
+                </a>
+                <a class="delete-link mx-2" href="#" data-id="${row.id}">
+                    <i class="fa-solid fa-trash" style="color: black;"></i>
+                </a>
+            </div>
+        `;
           }
         },
       ]

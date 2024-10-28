@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TaskService } from '../../services/tasks.service';
 import Swal from 'sweetalert2';
 import { ActivatedRoute } from '@angular/router';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-update-task',
@@ -12,10 +13,11 @@ import { ActivatedRoute } from '@angular/router';
 export class UpdateTaskComponent implements OnInit {
   id: string | null = null;
 
-  task = {
+  task : Task = {
+    id: '',
     completed: false,
     description: '',
-    Id: ''
+    createdAt: new Date()
   };
 
   constructor(private router: Router, private taskService: TaskService, private route: ActivatedRoute) { }
@@ -34,17 +36,20 @@ export class UpdateTaskComponent implements OnInit {
  async getTask(id: string) {
      let task = await this.taskService.edit(id);
 
-     this.task.Id = task.id;
+     this.task.id = task.id;
      this.task.description = task.description;
      this.task.completed = task.completed; 
+     this.task.createdAt = task.createdAt;
   }
 
-  updateTask() {
+  async updateTask() {
 
     if (this.task.description === "" || this.task.description === undefined) {
       $('.error-description').text('campo obrigatório')
     }
     else {
+      await this.taskService.updateTask(this.task);
+
       Swal.fire({
         icon: 'success',
         title: 'Sucesso!',

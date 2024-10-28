@@ -18,17 +18,13 @@ export class TaskService {
         return this.httpClient.get(this.api)
     }
 
-    deleteTask() {
-
+    deleteTask(id: string): Promise<any> {
+       return this.httpClient.delete(`${this.api}/Delete?Id=${id}`).toPromise()
     }
 
     async edit(id: string): Promise<any> {
         return this.httpClient.get<any>(`${this.api}/Edit?Id=${id}`).toPromise();
-      }
-
-    updateTask() {
-
-    }
+      }  
 
    async createTask(completed: boolean, description: string) {
         const task = {
@@ -43,6 +39,18 @@ export class TaskService {
             }, error => {        
                 console.error('Error creating task', error);
             });
+    }
+
+    async updateTask(task: Task){
+
+        this.httpClient.put(`${this.api}/Update`, task)
+        .subscribe(response => {
+            return response;
+        }, error => {        
+            console.error('Error creating task', error);
+        });
+
+
     }
 
 }
