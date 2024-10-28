@@ -31,10 +31,10 @@ export class HeaderComponent implements OnInit {
     this.initDataTable();
 
     if (this.dtElement) {
-        this.dtElement.dtInstance.then((dtInstance: any) => {
-          dtInstance.ajax.reload();
-        });
-      }
+      this.dtElement.dtInstance.then((dtInstance: any) => {
+        dtInstance.ajax.reload();
+      });
+    }
 
   }
 
@@ -42,25 +42,29 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/create']);
   }
 
-  navigateToEdit(id: string) {    
+  navigateToEdit(id: string) {
     this.router.navigate(['/edit', id]);
   }
 
-  async deleteTask(id: string){
+  async deleteTask(id: string) {
     await this.taskService.deleteTask(id);
 
     Swal.fire({
-        icon: 'success',
-        title: 'Sucesso!',
-        text: `Cadastrado com Sucesso!`,
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true
-      }).then(() => {
-        this.router.navigate(['']);
-      });
+      icon: 'success',
+      title: 'Sucesso!',
+      text: `Cadastrado com Sucesso!`,
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true
+    }).then(() => {
+      if (this.dtElement) {
+        this.dtElement.dtInstance.then((dtInstance: any) => {
+          dtInstance.ajax.reload();
+        });
+      }
+    });
 
   }
 
@@ -100,7 +104,7 @@ export class HeaderComponent implements OnInit {
           .set('pageSize', dataTablesParameters.length.toString())
           .set('query', this.searchQuery);
 
-        this.HttpClient.post<DataTablesResponse>('https://localhost:7009/api/Tasks', params)
+        this.HttpClient.post<DataTablesResponse>('https://localhost:7009/api/Tasks/GetDataTables', params)
           .subscribe(resp => {
             this.dttrigger.next(null);
             callback({
@@ -110,20 +114,30 @@ export class HeaderComponent implements OnInit {
             });
             $('.edit-link').off('click').on('click', (event) => {
               event.preventDefault();
-              const id = $(event.currentTarget).data('id');     
+              const id = $(event.currentTarget).data('id');
               this.navigateToEdit(id);
             });
 
             $('.delete-link').off('click').on('click', (event) => {
-                event.preventDefault();
-                const id = $(event.currentTarget).data('id');          
-                this.navigateToEdit(id);
-              });
+              event.preventDefault();
+              const id = $(event.currentTarget).data('id');
+              this.deleteTask(id);
+            });
           });
 
       },
       columns: [
-        { title: 'Completa', data: 'completed' },
+        {
+          title: 'Completa',
+          data: 'completed',
+          render: function (data) {
+            if (data) {
+              return `<i class="fa-solid fa-check-circle text-success" title="Tarefa Concluída"></i>`;
+            } else {
+              return `<i class="fa-solid fa-times-circle text-danger" title="Tarefa Não Concluída"></i>`;
+            }
+          }
+        },
         { title: 'Descrição', data: 'description' },
         { title: 'Data de Criação', data: 'createdAt' },
         {
