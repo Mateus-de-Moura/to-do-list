@@ -7,7 +7,7 @@ Front-End criado  com  angular 18 e Back-End com api .net core 8 .
 
 Liste as tecnologias utilizadas no projeto. Exemplo:
 
-- **Linguagem:** C#, JavaScript, jQuery.
+- **Linguagem:** C#, TypeScript,jQuery.
 - **Frameworks:** ASP.NET, Angular, .
 - **Banco de Dados:** SQL Server.
 
