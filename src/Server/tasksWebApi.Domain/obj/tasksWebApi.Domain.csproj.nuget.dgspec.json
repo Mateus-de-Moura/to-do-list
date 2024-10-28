@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {}
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
+    "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj",
-        "projectName": "tasksWebApi.Domain",
-        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj",
+        "projectName": "TasksWebApi.Domain",
+        "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\obj\\",
         "projectStyle": "PackageReference",

@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\tasksWebApi.Domain\TasksWebApi.Domain.csproj" />
+    <ProjectReference Include="..\tasksWebApi.Domain\tasksWebApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\tasksWebApi.Application\tasksWebApi.Application.csproj" />
-    <ProjectReference Include="..\tasksWebApi.Domain\tasksWebApi.Domain.csproj" />
-    <ProjectReference Include="..\tasksWebApi.Infra.Data\tasksWebApi.Infra.Data.csproj" />
+    <ProjectReference Include="..\tasksWebApi.Application\TasksWebApi.Application.csproj" />
+    <ProjectReference Include="..\tasksWebApi.Domain\TasksWebApi.Domain.csproj" />
+    <ProjectReference Include="..\tasksWebApi.Infra.Data\TasksWebApi.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

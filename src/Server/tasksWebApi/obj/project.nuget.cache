@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tM9sCHDCD8w=",
+  "dgSpecHash": "lJVaZ55rcl0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
+  "projectFilePath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\TasksWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mateus\\.nuget\\packages\\ardalis.result\\10.0.0\\ardalis.result.10.0.0.nupkg.sha512",
     "C:\\Users\\Mateus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

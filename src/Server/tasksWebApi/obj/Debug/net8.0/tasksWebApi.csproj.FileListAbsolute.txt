@@ -25,7 +25,6 @@ C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.tasksWebApi.props
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\scopedcss\bundle\tasksWebApi.styles.css
-C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\tasksWeb.6A76309F.Up2Date
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\tasksWebApi.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\refint\tasksWebApi.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\tasksWebApi.pdb
@@ -87,3 +86,4 @@ C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Mateus\OneDrive\Área de Trabalho\To-Do-List\src\Server\TasksWebApi\obj\Debug\net8.0\TasksWeb.89A8307F.Up2Date

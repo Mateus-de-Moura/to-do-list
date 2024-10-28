@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "voGv3NWnkpQ=",
+  "dgSpecHash": "HjSCrIq4pJE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

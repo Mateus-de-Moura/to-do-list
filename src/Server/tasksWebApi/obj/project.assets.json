@@ -2099,33 +2099,33 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "tasksWebApi.Application/1.0.0": {
+      "TasksWebApi.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Ardalis.Result": "10.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "tasksWebApi.Domain": "1.0.0",
-          "tasksWebApi.Infra.Data": "1.0.0"
+          "TasksWebApi.Domain": "1.0.0",
+          "TasksWebApi.Infra.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/tasksWebApi.Application.dll": {}
+          "bin/placeholder/TasksWebApi.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/tasksWebApi.Application.dll": {}
+          "bin/placeholder/TasksWebApi.Application.dll": {}
         }
       },
-      "tasksWebApi.Domain/1.0.0": {
+      "TasksWebApi.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/tasksWebApi.Domain.dll": {}
+          "bin/placeholder/TasksWebApi.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/tasksWebApi.Domain.dll": {}
+          "bin/placeholder/TasksWebApi.Domain.dll": {}
         }
       },
-      "tasksWebApi.Infra.Data/1.0.0": {
+      "TasksWebApi.Infra.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -2134,13 +2134,13 @@
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.Binder": "8.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "tasksWebApi.Domain": "1.0.0"
+          "TasksWebApi.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/tasksWebApi.Infra.Data.dll": {}
+          "bin/placeholder/TasksWebApi.Infra.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/tasksWebApi.Infra.Data.dll": {}
+          "bin/placeholder/TasksWebApi.Infra.Data.dll": {}
         }
       }
     }
@@ -6579,20 +6579,20 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "tasksWebApi.Application/1.0.0": {
+    "TasksWebApi.Application/1.0.0": {
       "type": "project",
-      "path": "../tasksWebApi.Application/tasksWebApi.Application.csproj",
-      "msbuildProject": "../tasksWebApi.Application/tasksWebApi.Application.csproj"
+      "path": "../tasksWebApi.Application/TasksWebApi.Application.csproj",
+      "msbuildProject": "../tasksWebApi.Application/TasksWebApi.Application.csproj"
     },
-    "tasksWebApi.Domain/1.0.0": {
+    "TasksWebApi.Domain/1.0.0": {
       "type": "project",
-      "path": "../tasksWebApi.Domain/tasksWebApi.Domain.csproj",
-      "msbuildProject": "../tasksWebApi.Domain/tasksWebApi.Domain.csproj"
+      "path": "../tasksWebApi.Domain/TasksWebApi.Domain.csproj",
+      "msbuildProject": "../tasksWebApi.Domain/TasksWebApi.Domain.csproj"
     },
-    "tasksWebApi.Infra.Data/1.0.0": {
+    "TasksWebApi.Infra.Data/1.0.0": {
       "type": "project",
-      "path": "../tasksWebApi.Infra.Data/tasksWebApi.Infra.Data.csproj",
-      "msbuildProject": "../tasksWebApi.Infra.Data/tasksWebApi.Infra.Data.csproj"
+      "path": "../tasksWebApi.Infra.Data/TasksWebApi.Infra.Data.csproj",
+      "msbuildProject": "../tasksWebApi.Infra.Data/TasksWebApi.Infra.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6600,9 +6600,9 @@
       "Ardalis.Result >= 10.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "tasksWebApi.Application >= 1.0.0",
-      "tasksWebApi.Domain >= 1.0.0",
-      "tasksWebApi.Infra.Data >= 1.0.0"
+      "TasksWebApi.Application >= 1.0.0",
+      "TasksWebApi.Domain >= 1.0.0",
+      "TasksWebApi.Infra.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6611,9 +6611,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
-      "projectName": "tasksWebApi",
-      "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\tasksWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\TasksWebApi.csproj",
+      "projectName": "TasksWebApi",
+      "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\TasksWebApi.csproj",
       "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\TasksWebApi\\obj\\",
       "projectStyle": "PackageReference",
@@ -6633,14 +6633,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj": {
-              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\tasksWebApi.Application.csproj"
+            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\TasksWebApi.Application.csproj": {
+              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Application\\TasksWebApi.Application.csproj"
             },
-            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj": {
-              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\tasksWebApi.Domain.csproj"
+            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Domain\\TasksWebApi.Domain.csproj"
             },
-            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\tasksWebApi.Infra.Data.csproj"
+            "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\TasksWebApi.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\Mateus\\OneDrive\\Área de Trabalho\\To-Do-List\\src\\Server\\tasksWebApi.Infra.Data\\TasksWebApi.Infra.Data.csproj"
             }
           }
         }

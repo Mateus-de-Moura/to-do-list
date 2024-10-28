@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("tasksWebApi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TasksWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4574125df77999d3c46bf34c22322dba7a6c18eb")]
-[assembly: System.Reflection.AssemblyProductAttribute("tasksWebApi")]
-[assembly: System.Reflection.AssemblyTitleAttribute("tasksWebApi")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5d07b5bde6e71c033456ed9ccc64e06b93f0981")]
+[assembly: System.Reflection.AssemblyProductAttribute("TasksWebApi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TasksWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
