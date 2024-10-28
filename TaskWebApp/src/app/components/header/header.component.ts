@@ -6,6 +6,7 @@ import { DataTablesResponse } from '../../models/datatables-response.model';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { DataTableDirective } from 'angular-datatables';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -24,11 +25,11 @@ export class HeaderComponent implements OnInit {
   @ViewChild(DataTableDirective, { static: false })
   dtElement!: DataTableDirective;
 
-  constructor(private HttpClient: HttpClient, private router: Router) { }
+  constructor(private HttpClient: HttpClient, private router: Router, private taskService: TaskService) { }
 
   ngOnInit(): void {
     this.initDataTable();
-    
+
     if (this.dtElement) {
         this.dtElement.dtInstance.then((dtInstance: any) => {
           dtInstance.ajax.reload();
@@ -43,6 +44,24 @@ export class HeaderComponent implements OnInit {
 
   navigateToEdit(id: string) {    
     this.router.navigate(['/edit', id]);
+  }
+
+  async deleteTask(id: string){
+    await this.taskService.deleteTask(id);
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Sucesso!',
+        text: `Cadastrado com Sucesso!`,
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true
+      }).then(() => {
+        this.router.navigate(['']);
+      });
+
   }
 
   initDataTable() {
